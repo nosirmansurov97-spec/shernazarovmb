@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="uz" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SherNazarov | Portfolio</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        #slider {
+            transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #ea580c, #f97316);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-900">
+
+    <header class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto flex justify-between items-center py-3 px-6">
+
+            <div class="flex items-center gap-2">
+                <div class="w-20 h-15 bg-orange-600 rounded-lg flex items-center justify-center text-white font-bold">
+                    <img src="images/image.png" alt="logo" class="w-100 h-[70px] rounded-lg font-bold">
+                </div>
+                <span class="font-extrabold text-xl tracking-tighter">SHERNAZAROV</span>
+            </div>
+
+            <nav class="hidden md:flex space-x-8 font-medium">
+                <a href="#" class="hover:text-orange-600 transition">Asosiy</a>
+                <a href="#services" class="hover:text-orange-600 transition">Xizmatlar</a>
+                <a href="#portfolio" class="hover:text-orange-600 transition">Portfolio</a>
+                <a href="#contact" class="hover:text-orange-600 transition">Aloqa</a>
+            </nav>
+
+            <a href="tel:+998944209109"
+                class="hidden md:block bg-orange-600 hover:bg-orange-700 text-white px-5 py-2 rounded-full transition-all transform hover:scale-105 shadow-md">
+                Bog'lanish
+            </a>
+
+            <button id="hamburger" class="md:hidden text-2xl focus:outline-none text-orange-600">☰</button>
+        </div>
+
+        <div id="mobile-menu" class="hidden bg-white border-t px-6 py-4 space-y-4 shadow-xl">
+            <a href="#" class="block font-bold hover:text-orange-600">Asosiy</a>
+            <a href="#services" class="block font-bold hover:text-orange-600">Xizmatlar</a>
+            <a href="#portfolio" class="block font-bold hover:text-orange-600">Portfolio</a>
+            <a href="#contact" class="block font-bold hover:text-orange-600">Aloqa</a>
+        </div>
+    </header>
+
+    <section class="pt-32 pb-16 px-4 max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
+        <div class="w-full md:w-1/2" data-aos="fade-right">
+            <div class="relative">
+                <div
+                    class="absolute -top-4 -left-4 w-24 h-24 bg-orange-200 rounded-full mix-blend-multiply filter blur-xl opacity-70">
+                </div>
+                <img src="images/photo_2026-04-15_21-04-32.jpg"
+                    class="relative rounded-2xl shadow-2xl hover:grayscale-0 transition duration-500">
+            </div>
+        </div>
+
+        <div class="flex-1 space-y-6" data-aos="fade-left">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
+                SHERNAZAROV <br> <span class="gradient-text">OZODBEK</span>
+            </h1>
+            <p class="text-gray-600 text-lg md:text-xl leading-relaxed">
+                Professional <span class="font-bold text-gray-900 underline decoration-orange-500">Mobilograf</span> va
+                sportchi. Dunyoni kadrlar orqali ko'rsatishni yaxshi ko'raman.
+            </p>
+            <div class="flex flex-wrap gap-4">
+                <div class="bg-orange-50 px-4 py-2 rounded-lg border border-orange-100">
+                    <span class="text-orange-600 font-bold">25.03.2010</span>
+                </div>
+                <div class="bg-blue-50 px-4 py-2 rounded-lg border border-blue-100">
+                    <span class="text-blue-600 font-bold">Professional Mobilgraph</span>
+                </div>
+            </div>
+            <a href="https://t.me/+gHC3h2r6rURmMTQy"
+                class="inline-flex items-center gap-2 bg-gray-900 text-white px-8 py-4 rounded-xl hover:bg-orange-600 transition-all shadow-lg group">
+                Loyiha boshlash <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition"></i>
+            </a>
+        </div>
+    </section>
+
+    <section id="services" class="py-20 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16" data-aos="zoom-in">
+                <h2 class="text-3xl font-bold">Mening Xizmatlarim</h2>
+                <div class="w-20 h-1 bg-orange-600 mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-800 p-8 rounded-2xl hover:bg-orange-600 transition duration-500 transform hover:-translate-y-2 group"
+                    data-aos="fade-up">
+                    <div
+                        class="w-14 h-14 bg-orange-500/20 rounded-lg flex items-center justify-center mb-6 group-hover:bg-white/20">
+                        <i class="fa-solid fa-camera text-2xl text-orange-500 group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Mobilografiya</h3>
+                    <p class="text-gray-400 group-hover:text-orange-50">Sifatli va kreativ video kontentlar yaratish,
+                        montaj va rang berish.</p>
+                </div>
+
+                <div class="bg-gray-800 p-8 rounded-2xl hover:bg-orange-600 transition duration-500 transform hover:-translate-y-2 group"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <div
+                        class="w-14 h-14 bg-orange-500/20 rounded-lg flex items-center justify-center mb-6 group-hover:bg-white/20">
+                        <i class="fa-solid fa-dumbbell text-2xl text-orange-500 group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Fitness Trener</h3>
+                    <p class="text-gray-400 group-hover:text-orange-50">Sog'lom hayot tarzi va shaxsiy mashg'ulotlar
+                        rejasi.</p>
+                </div>
+
+                <div class="bg-gray-800 p-8 rounded-2xl hover:bg-orange-600 transition duration-500 transform hover:-translate-y-2 group"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <div
+                        class="w-14 h-14 bg-orange-500/20 rounded-lg flex items-center justify-center mb-6 group-hover:bg-white/20">
+                        <i class="fa-solid fa-clapperboard text-2xl text-orange-500 group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Content Creation</h3>
+                    <p class="text-gray-400 group-hover:text-orange-50">Ijtimoiy tarmoqlar uchun kreativ g'oyalar va
+                        ularni amalga oshirish.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-20 px-4 max-w-7xl mx-auto">
+        <h2 class="text-3xl font-bold mb-12 flex items-center gap-4">
+            <span class="w-8 h-8 bg-orange-600 rounded flex items-center justify-center text-white text-sm">01</span>
+            So'nggi Ishlarim
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <video controls
+                class="rounded-2xl w-full shadow-lg border-4 border-white hover:border-orange-500 transition-all duration-500">
+                <source src="./images/IMG_2888.MOV">
+            </video>
+            <video controls
+                class="rounded-2xl w-full shadow-lg border-4 border-white hover:border-orange-500 transition-all duration-500">
+                <source src="./images/IMG_2577.MOV">
+            </video>
+        </div>
+    </section>
+
+    <section class="bg-orange-50 py-20 px-4">
+        <div class="max-w-4xl mx-auto overflow-hidden relative rounded-3xl shadow-2xl border-8 border-white">
+            <div id="slider" class="flex">
+                <div class="min-w-full"><img src="./images/Снимок экрана (31).png"
+                        class="w-full object-cover h-[400px]"></div>
+                <div class="min-w-full"><img src="./images/Снимок экрана (32).png"
+                        class="w-full object-cover h-[400px]"></div>
+                <div class="min-w-full"><img src="./images/Снимок экрана (33).png"
+                        class="w-full object-cover h-[400px]"></div>
+            </div>
+            <button id="prev"
+                class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/30 backdrop-blur-md hover:bg-white text-black p-3 rounded-full transition shadow-lg">❮</button>
+            <button id="next"
+                class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/30 backdrop-blur-md hover:bg-white text-black p-3 rounded-full transition shadow-lg">❯</button>
+        </div>
+    </section>
+
+    <div class="py-20 px-4 flex justify-center">
+        <a href="https://yandex.ru/games/app/279749"
+            class="group relative overflow-hidden bg-blue-700 text-white px-12 py-6 rounded-2xl font-black text-2xl shadow-2xl transition-all hover:scale-105 active:scale-95">
+            <span class="relative z-10 flex items-center gap-3">
+                BMW M5 <span class="text-orange-400">GAME</span> <i class="fa-solid fa-gamepad"></i>
+            </span>
+            <div
+                class="absolute inset-0 bg-gradient-to-r from-blue-600 to-indigo-900 opacity-0 group-hover:opacity-100 transition-opacity">
+            </div>
+        </a>
+    </div>
+
+    <footer id="contact" class="bg-gray-950 text-white pt-20 pb-10 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-12 border-b border-gray-800 pb-12">
+            <div>
+                <h3 class="text-2xl font-bold mb-6 italic gradient-text">SherNazarov</h3>
+                <p class="text-gray-400 mb-6">Muvaffaqiyat — bu har kungi kichik g'alabalar yig'indisidir.</p>
+                <div class="flex gap-4 text-2xl">
+                    <a href="https://instagram.com/1_shernazarov_1" class="hover:text-orange-500 transition"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://t.me/+gHC3h2r6rURmMTQy" class="hover:text-orange-500 transition"><i
+                            class="fa-brands fa-telegram"></i></a>
+                    <a href="tel:+998944209109" class="hover:text-orange-500 transition"><i
+                            class="fa-solid fa-phone"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="font-bold text-lg mb-6 underline decoration-orange-600">Quick Links</h4>
+                <ul class="space-y-4 text-gray-400">
+                    <li><a href="#" class="hover:text-white transition">Asosiy</a></li>
+                    <li><a href="#services" class="hover:text-white transition">Xizmatlar</a></li>
+                    <li><a href="#portfolio" class="hover:text-white transition">Portfolio</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-bold text-lg mb-6 underline decoration-orange-600">Kontakt</h4>
+                <p class="text-gray-400 mb-2">Manzil: O'zbekiston</p>
+                <p class="text-gray-400 mb-2">Tel: +998 94 420 91 09</p>
+                <p class="text-orange-500 font-bold">24/7 Aloqada</p>
+            </div>
+        </div>
+        <p class="text-center mt-10 text-gray-600 text-sm">© 2026 SherNazarov Portfolio. Barcha huquqlar himoyalangan.
+        </p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Animatsiyalarni ishga tushirish
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Mobile Menu
+        const hamburger = document.getElementById("hamburger");
+        const mobileMenu = document.getElementById("mobile-menu");
+        hamburger.onclick = () => {
+            mobileMenu.classList.toggle("hidden");
+            hamburger.innerText = mobileMenu.classList.contains("hidden") ? "☰" : "✕";
+        };
+
+        // Slider logic
+        let index = 0;
+        const slider = document.getElementById("slider");
+        const total = slider.children.length;
+        const updateSlider = () => {
+            slider.style.transform = `translateX(-${index * 100}%)`;
+        }
+
+        document.getElementById("next").onclick = () => {
+            index = (index + 1) % total;
+            updateSlider();
+        };
+
+        document.getElementById("prev").onclick = () => {
+            index = (index - 1 + total) % total;
+            updateSlider();
+        };
+
+        // Auto slide
+        setInterval(() => {
+            index = (index + 1) % total;
+            updateSlider();
+        }, 5000);
+    </script>
+</body>
+
+</html>
